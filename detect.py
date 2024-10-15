@@ -181,11 +181,11 @@ if __name__ == '__main__':
         "--weights",
         nargs="+",
         type=str,
-        default="/home/wjh/code/yolov7/runs/train/exp26/weights/best.pt",
+        default="runs/train/exp26/weights/best.pt",
         help="model.pt path(s)",
     )
     parser.add_argument(
-        "--source", type=str, default="/home/wjh/code/yolov7/data/images", help="source"
+        "--source", type=str, default="dataset/images", help="source"
     )  # file/folder, 0 for webcam
     parser.add_argument('--img-size', type=int, default=640, help='inference size (pixels)')
     parser.add_argument('--conf-thres', type=float, default=0.25, help='object confidence threshold')
